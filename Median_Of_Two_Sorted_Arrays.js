@@ -1,4 +1,11 @@
 /**
+ * Sort Algorithm
+ * JS Array's sort uses timsort algorithm.
+ * Which in time complexity of O(n*logn) in worst case, O(n) in best case,
+ * In this case, both arrays are already sorted, so function works in O(n)
+ */
+
+/**
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number}
