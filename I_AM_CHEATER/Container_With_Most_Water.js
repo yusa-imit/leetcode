@@ -16,7 +16,11 @@ var maxArea = function (height) {
     if (answer / h > height.length) break;
     const idxs = height.flatMap((v, i) => (v >= h ? i : []));
     if (idxs.length < 2) continue;
-    var ll = Math.min(...idxs);
+    var ll = (() => {
+      for (var i = 0; i < height.length; i++) {
+        if (height[i] >= h) return i;
+      }
+    })();
     var rr = Math.max(...idxs);
     answer = Math.max(check(ll, rr), answer);
   }
