@@ -1,7 +1,7 @@
 /**
  *
  * Lets get fammiliar with water container problem.
- * Solve rete 0%
+ * Solve rate 0%
  *
  */
 
